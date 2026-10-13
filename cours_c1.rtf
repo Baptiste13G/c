@@ -1,0 +1,52 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2907
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red251\green2\blue7;\red0\green0\blue0;\red189\green198\blue208;
+\red15\green16\blue16;\red252\green99\blue95;\red202\green202\blue202;\red198\green146\blue255;\red70\green137\blue204;
+\red173\green176\blue178;}
+{\*\expandedcolortbl;;\cssrgb\c100000\c14913\c0;\cssrgb\c0\c0\c0;\cssrgb\c78824\c81961\c85098;
+\cssrgb\c7059\c7451\c7843;\cssrgb\c100000\c48235\c44706;\cssrgb\c83137\c83137\c83137;\cssrgb\c82353\c65882\c100000;\cssrgb\c33725\c61176\c83922;
+\cssrgb\c73333\c74510\c74902;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww28600\viewh14420\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\qj\partightenfactor0
+
+\f0\fs24 \cf0 Allocations dynamique de la m\'e9moire\
+\
+M\'e9moire = 3 espaces\
+-Partie statique contenant principalement le code des fonctions\
+-Une pile(stack) contient principalement les variables cr\'e9\'e9es statiquement\
+-Un tas (heap) contient les variables cr\'e9\'e9es dynamiquement \
+\
+Trois fonction d\'92allocations dynamique:\
+-malloc\
+-calloc\
+-realloc\
+\
+Une fonction pour lib\'e9rer l\'92espace allou\'e9:\
+-free\
+\
+La biblioth\'e8que \'e0 utiliser ; \cf2 <stdlib.h>\
+\cf0 \
+Notions pr\'e9liminaires :\
+-Le type size_t :\
+	Il s\'92agit d\'92un type sui va repr\'e9senter un entier non sign\'e9\
+	garantie de repr\'e9senter n\'92importe quelle entier\
+-La fonction malloc:\
+	void *malloc(size_t taille)\
+	Cette fonction retourne une valeur de type adresse (On le voit \'e0 l\'92\'e9toile \'91*\'92 avant le malloc)\
+	Cette adresse correspond au d\'e9but de l\'92espace m\'e9moire qui vous sera r\'e9serv\'e9 \
+	Si la m\'e9moire est pleine (\'e7a arrive), la valeur NULL est retourn\'e9e\
+	Il est de ce fait primordiale (m\'eame si en pratique on a tendance \'e0 ne pas le faire) de v\'e9rifier que l\'92allocation demand\'e9e c\'92est tr\'e8s bien pass\'e9e\
+	Le nombre de mots (ou d\'92octets) r\'e9serv\'e9 est \'e9gale \'e0 la taille (pour un entier 4 octets par exemple)\
+	Elle est appel\'e9e avec l\'92instruction \cf2 malloc(taille):\
+		\cf3 Elle retourne une adresse \'e0 partir de laquelle taille octets vous est donn\'e9\
+\
+\
+R\'e9server un bloc de mots\
+\pard\pardeftab720\partightenfactor0
+
+\f1 \cf4 \cb5 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 (\cf6 \strokec6 int\cf4 \strokec4  \cf7 \strokec7 *\cf4 \strokec4 ) \cf8 \strokec8 malloc\cf4 \strokec4 (n\cf7 \strokec7 *\cf9 \strokec9 sizeof\cf4 \strokec4 (\cf6 \strokec6 int\cf4 \strokec4 ))\cf10 \cb1 \strokec10 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\qj\partightenfactor0
+
+\f0 \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+}
