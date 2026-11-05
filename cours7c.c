@@ -40,6 +40,16 @@ int tab_tri(int *tab,int taille){
     return 1;
 }
 
+int jeu_pomme(int *n, int m){ //n = nombre de joueurs, m est jusque ou on compte à chaque fois
+    int joueur_courant=n[0];
+    int gagnant;
+    while ...{
+        %m;
+        
+    }
+    return gagnant;
+}
+
 int main(void){
     int tab_tri(int *tab, int taille);
     int tab[5]={1,2,3,4,5};

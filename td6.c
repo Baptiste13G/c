@@ -60,17 +60,29 @@ int f(int *a, int n){
     }
 }
 
-void vider(int n){
-if(n==1){
-
+int compare(int a, int b){
+    if(a>b){
+        return 1;
+    }
+    if(b>a){
+        return -1;
+    }
+    return 0;
 }
-if(n==2 && n-1 vide){
-    
-}
+
+int compare2(int a,int b){
+    return (a>b)?1:((a<b)?-1:0);
 }
 
-void remplir(int n){
+int compare3(int a, int b){
+    return (a>b)-(a<b);
+}
 
+int compare4(int a, int b){
+    int res=0;
+    while(a&&b){
+        if((a&1) &!(b&1)){res=-1;}
+    }
 }
 
 int main(void){
@@ -90,5 +102,14 @@ int main(void){
         scanf("%d",test+i);
         printf("%d\n",f(test,nb));
     }*/
+    printf("%d\n",compare(10,5));
+    printf("%d\n",compare(5,5));
+    printf("%d\n",compare(5,10));
+    printf("%d\n",compare2(10,5));
+    printf("%d\n",compare2(5,5));
+    printf("%d\n",compare2(5,10));
+    printf("%d\n",compare3(10,5));
+    printf("%d\n",compare3(5,5));
+    printf("%d\n",compare3(5,10));
     return 0;
 }
