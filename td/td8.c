@@ -92,7 +92,7 @@ void fusion(int tab1[k], int tab2[k], int tab3[2*k]){
     }
 }
 
-
+//exo 7 dora vu en cours
 
 int main(void){
     int tab[5]={1,3,5,5,-1};
